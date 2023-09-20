@@ -28,6 +28,7 @@ import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {ReactiveFormsModule} from '@angular/forms';
 import {CoursesService} from './services/courses.service';
 import {courseResolver} from './services/course.resolver';
+import { TestCreationComponent } from './test-creation/test-creation.component';
 
 @NgModule({
     declarations: [
@@ -35,7 +36,8 @@ import {courseResolver} from './services/course.resolver';
         AboutComponent,
         CourseComponent,
         CoursesCardListComponent,
-        CourseDialogComponent
+        CourseDialogComponent,
+        TestCreationComponent
     ],
     imports: [
         CommonModule,
