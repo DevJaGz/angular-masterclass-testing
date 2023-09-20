@@ -50,7 +50,11 @@ describe('CoursesCardListComponent', () => {
 
   it("should display the first course", () => {
 
-      pending();
+      component.courses = setupCourses();
+      fixture.detectChanges();
+
+      const course = component.courses[0];
+      expect(course).toBeTruthy(`Could not find course id:${course.id}`);
 
   });
 
